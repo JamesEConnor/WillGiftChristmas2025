@@ -1,0 +1,62 @@
+#grid {
+    position: relative;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-areas:
+        'box-1 box-7 box-4'
+        'box-2 box-7 box-5'
+        'box-3 box-7 box-6';
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.grid-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #bbbbbb;
+}
+
+.grid-box:hover {
+    cursor: pointer;
+
+    box-shadow: 0px 0px 47px -11px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 0px 0px 47px -11px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 0px 47px -11px rgba(0,0,0,0.75) inset;
+}
+
+.grid-box.revealed {
+    background-color: rgba(187, 187, 187, 0.5);
+}
+
+.grid-box.revealed:hover {
+    cursor: default;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.grid-box > span {
+    font-family: 'Arial', sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+
+    user-select: none;
+}
+.grid-box.revealed > span {
+    display: none;
+}
+
+
+.box-7.noclick {
+    cursor: not-allowed;
+}
+.box-7.noclick:hover {
+    box-shadow: 0px 0px 47px -11px rgba(228, 79, 79, 0.75) inset;
+    -webkit-box-shadow: 0px 0px 47px -11px rgba(228, 79, 79, 0.75) inset;
+    -moz-box-shadow: 0px 0px 47px -11px rgba(228, 79, 79, 0.75) inset;
+}
