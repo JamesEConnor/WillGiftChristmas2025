@@ -1,12 +1,5 @@
 //Get the revealed challenges
-challenge = 0;
-cookies = document.cookie.split(";")
-cookies.forEach(cookie => {
-    splt = cookie.split("=")
-    if (splt[0] == "challenge") {
-        challenge = parseInt(splt[1])
-    }
-});
+challenge = parseInt(localStorage.getItem("challenge") ?? "0")
 
 //Add boxes to hide image
 var BOX_CNT = 7

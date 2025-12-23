@@ -18,7 +18,9 @@ $("form input[type=submit]").click(function() {
     else {
         $("#success").addClass("revealed")
 
-        document.cookie = "challenge=1"
+        localStorage.setItem("challenge", "1")
+
+        Cookies.
         setTimeout(function() {
             window.location = "../index.html"
         }, 4000)
