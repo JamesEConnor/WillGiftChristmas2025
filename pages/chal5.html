@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/challenges.css">
+    </head>
+    <body>
+        <div id="chal5" class="flex">
+            <h1>Challenge #5</h1>
+            <h2>Gregory's gone missing! Can you find him in the image below??</h2>
+        
+            <div class="magnifier">
+                <img id="waldo" src="../images/waldogregory.png" height="500">
+            </div>
+        </div>
+
+        <div class="flex" id="success">
+            <h1>Found him! Thank goodness, I was getting worried.</h1>
+
+            <h2>You successfully completed the fifth challenge! Going back to the homepage...</h2>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../js/challenges.js"></script>
+        <script src="../js/magnifier.js"></script>
+        <script>magnify("waldo", 3);</script>
+        <script src="../js/chal5.js"></script>
+    </body>
+</html>

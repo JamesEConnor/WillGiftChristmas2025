@@ -119,3 +119,71 @@ form.error input[type=submit]:hover {
     color: white;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+#chal3 > img, #chal2 > img {
+    transition: transform ease 0.1s;
+}
+
+#chal3 > img:hover, #chal2 > img:hover {
+    cursor: pointer;
+}
+
+#chal2 > img:hover {
+    transform: scale(1.1) rotateZ(6deg);
+}
+
+#chal3 > img:focus, #chal3 > img:active {
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+.magnifier {
+    position: relative;
+}
+
+.magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 300px;
+    height: 300px;
+}
+
+.magnifier-glass:after, .magnifier-glass:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 6px;
+    height: 40px;
+    background-color: red;
+}
+
+.magnifier-glass:before {
+    width: 40px;
+    height: 6px;
+}
+
+
+
+#chal7 form input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+}

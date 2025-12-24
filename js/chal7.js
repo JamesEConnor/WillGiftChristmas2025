@@ -3,10 +3,10 @@ $("form").submit(function() {
 })
 
 $("form input[type=submit]").click(function() {
-    var submitted = $("form input[type=text]").val().trim()
+    var submitted = $("form input[type=checkbox]").is(":checked")
     
     //If unsuccessful, show an error
-    if(submitted.toLowerCase() != "egg yolks") {
+    if(!submitted) {
         $("form").addClass("error")
         setTimeout(function() {
             $("form").removeClass("error")
@@ -16,6 +16,6 @@ $("form input[type=submit]").click(function() {
     //set the document cookie, and then redirect
     //to the main page
     else {
-        challenge_success(1)
+        challenge_success(7)
     }
 })
